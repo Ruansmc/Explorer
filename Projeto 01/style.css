@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 32px;
+}
+
+body {
+  margin: 0;
+  display: initial;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-display: 10px;
+  font-size: large;
+}
+
+body img {
+  height: 200px;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  top: 0;
+}
+
+h1 {
+  align-items: center;
+  margin: 0px auto;
+  justify-content: center;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 300;
+}
+
+h1 span {
+  font-weight: 700;
+}
+
+p,
+footer {
+  font-size: small;
+}
+
+h1,
+p,
+footer {
+  text-align: center;
+}
+
+span,
+a {
+  color: #ff9900;
+}
