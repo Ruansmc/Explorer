@@ -1,5 +1,10 @@
+* {
+  margin: 0;
+}
+
 #hero {
   width: 592px;
+  margin: 0 auto 72px;
 }
 
 body {
@@ -26,11 +31,35 @@ h1 span {
   font-weight: bold;
 }
 
-p {
+p,
+#footer {
   color: #7d7087;
+  font-size: 14px;
+  line-height: 28px;
 }
 
 span,
 a {
   color: #ff9900;
+}
+
+#balls {
+  width: 90px;
+  align-items: flex-end;
+  margin: 0px 660px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#footer a + a {
+  margin-left: 28px;
+}
+
+#line {
+  width: 568px;
+  height: 0px;
+  border: 1px solid #a3a0a7;
+  margin: 0 auto 8px;
 }
