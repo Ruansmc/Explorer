@@ -1,16 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  line-height: 32px;
+#hero {
+  width: 592px;
 }
 
 body {
-  margin: 0;
-  display: initial;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-display: 10px;
-  font-size: large;
+  text-align: center;
 }
 
 body img {
@@ -22,26 +16,18 @@ body img {
 }
 
 h1 {
-  align-items: center;
-  margin: 0px auto;
-  justify-content: center;
-  font-family: "Inter Tight", sans-serif;
-  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 56px;
 }
 
 h1 span {
-  font-weight: 700;
+  font-weight: bold;
 }
 
-p,
-footer {
-  font-size: small;
-}
-
-h1,
-p,
-footer {
-  text-align: center;
+p {
+  color: #7d7087;
 }
 
 span,
