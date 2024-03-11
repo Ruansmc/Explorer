@@ -1,6 +1,4 @@
 <h1 align="center"> Projeto02 </h1>
-![image](https://github.com/Ruansmc/Explorer/assets/86540031/5b214528-af49-4eb6-8289-05ac9df30173)
-
 
 <p align="center">
 Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
