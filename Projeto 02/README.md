@@ -24,6 +24,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O Devlinks é um agregador de links para usar como cartão de visitas online.
 
 ## 🔖 Layout
+![image](https://github.com/Ruansmc/Explorer/assets/86540031/a1cae6e4-f73a-4f4a-8c49-0cedb95fb407)
+
 
 ## :memo: Licença
 
