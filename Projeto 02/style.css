@@ -1,10 +1,16 @@
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgb(247, 247, 247) 94%,
+    rgb(220, 233, 210) 40%
+  );
+  min-height: 100vh;
 }
 
 .page {
-  margin: 65px auto 0;
+  margin: 0 auto 0;
   width: 1000px;
 }
 
@@ -100,4 +106,10 @@ footer {
 
 footer a {
   font-weight: bold;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
