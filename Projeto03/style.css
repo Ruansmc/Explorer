@@ -61,6 +61,12 @@ fieldset {
   border: none;
 }
 
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 fieldset legend {
   font-family: "Archivo", sans-serif;
   font-size: 32px;
@@ -83,7 +89,7 @@ fieldset legend {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 8px;
-  color: #4e4958;
+  color: #343336;
 }
 
 .input-wrapper label span {
@@ -92,13 +98,15 @@ fieldset legend {
   font-size: 12px;
   line-height: 20px;
 
-  color: #c1bccc;
+  color: #3d3c40;
 }
 
-.input-wrapper input {
-  background: #fafafc;
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
+  background: #e5e5e5;
 
-  border: 1px solid #e6e6f0;
+  border: 1px solid #dfdfe8;
   border-radius: 8px;
   /* box-sizing: border-box; */
   padding: 0 16px;
@@ -107,5 +115,15 @@ fieldset legend {
 
   font-size: 16px;
   line-height: 26px;
-  color: #a19da8;
+
+  color: #141416;
+}
+
+.input-wrapper textarea {
+  padding: 0;
+  height: 168px;
+}
+
+.input-wrapper select {
+  appearance: none;
 }
