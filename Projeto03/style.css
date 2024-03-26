@@ -225,3 +225,50 @@ footer .button {
 footer :hover {
   background: #0f552e;
 }
+
+input:invalid {
+  border: 1px solid red;
+}
+
+button {
+  height: 56px;
+
+  font-family: "Archivo";
+
+  background: #3c9162;
+
+  border: 0;
+
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+button a {
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.button a {
+  height: 56px;
+
+  font-family: "Archivo";
+
+  background: #3c9162;
+
+  border: 0;
+
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}

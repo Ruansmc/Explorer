@@ -29,7 +29,7 @@
         <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
       </header>
       
-      <form>
+      <form id="my-form">
         <fieldset>
           <div class="fieldset-wrapper">
             <legend>Informações do Evento</legend>
@@ -46,7 +46,7 @@
                 >Link do Evento <span>(comece com https://)</span></label
               >
               <input type="url" id="event-link" />
-            </div>
+            </div> 
 
             <div class="input-wrapper">
               <label for="event-whatsapp"
@@ -80,7 +80,7 @@
                 <label for="event-email"
                   >E-mail do administrador<span>(digite um email válido)</span></label
                 >
-                <input type="email" id="event-email" />
+                <input type="email" id="event-email" required/>
               </div>
   
 
@@ -88,7 +88,7 @@
                 <label for="event-password"
                   >Senha de acesso para os participantes<span>(mínimo 8 caracteres)</span></label
                 >
-                <input type="password" id="event-password" />
+                <input required="Insira uma senha" type="password" id="event-password" />
               </div>
 
 
@@ -138,8 +138,15 @@
             
       </form>
       <footer >
-        <input class="button" type="submit" value="Salvar evento">
+        
+          <input class="button"  form="my-form" type="submit" value="Salvar evento">
+          <br>
+          <br>
+          <button>
+            <a href="sucesso.html">Enviar</a>
+          </button>
       </footer>
+   
     </div>
     
 
