@@ -24,21 +24,21 @@
             </div>
             <div class="firstname">
               <label for="nome">Sobrenome</label>
-              <input type="text" id="firstname" />
+              <input type="text" id="firstname"  />
             </div>
           </div>
 
           <div class="input-wrapper">
             <div class="email">
               <label for="email">Email</label>
-              <input type="text" id="email" />
+              <input type="text" id="email" value="exemplo@exemplo.com"/>
             </div>
           </div>
 
           <div class="input-wrapper">
             <div class="email">
               <label for="email">Senha</label>
-              <input type="text" id="email" />
+              <input type="password" id="email" required="Insira a Senha" />
             </div>
           </div>
         </fieldset>
@@ -55,26 +55,68 @@
           </div>
         </fieldset>
 
-
         <fieldset>
-          <legend>Seus horários disponíveis</legend>
+          
+          <div class="fieldset-wrapper">
+            <legend>Seus horários disponíveis</legend>
 
-          <div class="primeira">
-           <legend>Primeira Mentoria</legend>
-          </div>
-          <div class="input-wrapper">
-            <div class="firstname">
-              <label for="nome">Data</label>
-              <span>(DD/MM/AAAA)</span>
-              <input type="date" id="data" />
+       <div class="primeira">
+              <legend>Primeira Mentoria</legend>
+            </div>
+              <div class="col">
+                <div class="date-initial">
+                  <label for="event-date">Data</label>
+                  <span>(DD/MM/AAAA)</span>
+                  <input type="date" id="event-date" />
+                </div>
+
+                <div class="time-das">
+                  <label for="event-das">Das</label>
+                  <input type="time" id="event-das" />
+                </div>
+
+                <div class="time-as">
+                  <label for="event-as">Até</label>
+                  <input type="time" id="event-as" />
+                </div>
+              </div>
+
+              <div class="primeira">
+                <legend>Segunda Mentoria</legend>
+              </div>
+                <div class="col">
+                  <div class="date-initial">
+                    <label for="event-date">Data</label>
+                    <span>(DD/MM/AAAA)</span>
+                    <input type="date" id="event-date" />
+                  </div>
+  
+                  <div class="time-das">
+                    <label for="event-das">Das</label>
+                    <input type="time" id="event-das" />
+                  </div>
+  
+                  <div class="time-as">
+                    <label for="event-as">Até</label>
+                    <input type="time" id="event-as" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </fieldset>
 
-          <div class="segunda">
-            <legend>Segunda Mentoria</legend>
-           </div>
+<fieldset>
+  
+</fieldset>
 
       </form>
+
+      <footer>
+        <button>
+          Salvar
+        </button>
+      </footer>
     </div>
   </body>
 </html>

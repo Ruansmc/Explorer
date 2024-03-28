@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+body,
+span,
+input,
+select {
+  font-family: "Poppins";
+}
+
 body {
   background-color: rgb(224, 225, 225);
   font-family: "Poppins";
@@ -47,7 +54,7 @@ header p {
 }
 
 .page {
-  width: 740px;
+  width: 750px;
   margin: 0 auto;
 }
 
@@ -102,8 +109,13 @@ legend {
   gap: 20px;
 }
 
+input:invalid {
+  border: 1px solid red;
+}
+
 #nome,
-#firstname {
+#firstname,
+#email {
   width: 300px;
   height: 56px;
 
@@ -152,17 +164,79 @@ legend {
   line-height: 34px;
 }
 
-.input-wrapper date {
-  color: #4e4958;
-  border-radius: 20px 20px 0px 0px;
-  background: #fff;
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
+.col {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  font-size: normal;
+  font-family: "Poppins";
 }
 
-.input-wrapper span {
-  display: contents;
+.date-initial input {
+  width: 300px;
+
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white, #e6e6f0);
+  background: var(--Shapes-02, #fafafc);
+  top: 56px;
+  height: 56px;
+  align-items: center;
+}
+
+.date-initial span {
+  color: #8a8b8e;
+}
+
+.date-initial span:hover {
+  color: #2c2e32;
+}
+
+.col input {
+  display: flex;
+  top: 30px;
+}
+
+.time-das input {
+  gap: 20px;
+  width: 140px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white, #e6e6f0);
+  background: var(--Shapes-02, #fafafc);
+}
+.time-as input {
+  width: 140px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid var(--Back-Lines-in-white, #e6e6f0);
+  background: var(--Shapes-02, #fafafc);
+}
+
+footer {
+  display: fixed;
+  padding-left: 8px;
+  width: 750px;
+  height: 160px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 20px 20px;
+  background: #535971;
+  margin: 0 auto;
+}
+
+footer button {
+  border-radius: 20px;
+  background: #ff5374;
+  margin: 50px 50px 0;
+  width: 608px;
+  height: 55.652px;
+
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+footer button:hover {
+  background: #6d2231;
 }
