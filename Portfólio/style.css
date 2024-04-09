@@ -75,7 +75,7 @@ body * {
 #switch button {
   width: 32px;
   height: 32px;
-  background: rgb(233, 168, 227) var(--switch-bg-url) no-repeat center;
+  background: rgb(218, 217, 205) var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
   position: absolute;
@@ -86,8 +86,10 @@ body * {
 
   animation: slide-back 0.2s;
 }
-#switc button:hover {
+#switch button:hover {
   outline: 8px solid var(--highlight-color);
+  background: rgb(251, 255, 0) var(--switch-bg-url) no-repeat center;
+  transform: translateY(-50%);
 }
 
 .light #switch button {
@@ -153,6 +155,10 @@ ul li a:hover {
 }
 
 #social-links a {
+  content: attr(tooltip);
+  margin-left: 12px;
+  animation: fadeIn 600ms linear forwards;
+
   display: flex;
   align-items: center;
   justify-items: center;
@@ -174,11 +180,11 @@ footer {
 /*media queries*/
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets/bg-desktop.jpg);
+    --bg-url: url(./assets/19852263_6191107.jpg);
   }
 
   .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg);
+    --bg-url: url(./assets/18240979_v748-toon-103.jpg);
   }
 }
 
