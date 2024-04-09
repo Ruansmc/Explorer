@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.2);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(assets/moon-stars.svg);
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.2);
+  --switch-bg-url: url(assets/sun.svg);
+}
+
+img {
+  border-radius: 100%;
+}
+
+body {
+  /* background-image: url(./assets/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; */
+  background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
+}
+
+body * {
+  /* border: 1px solid yellow; Coloque a borda no componente para verificar como funciona */
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding-top: 0 24px;
+}
+
+/*profile*/
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  margin-top: 8px;
+  font-weight: 500;
+  line-height: 24 px;
+}
+/*switch*/
+
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: rgb(233, 168, 227) var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 1;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
+}
+#switc button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+
+.light #switch button {
+  animation: slide-in 0.2s forwards;
+}
+
+#switch span {
+  display: block;
+  width: 62px;
+  height: 24px;
+  /*surface-color-dark-mode*/
+  background: var(--surface-color);
+  /*stroke-color-dark-mode*/
+  border: 2px solid var(--stroke-color);
+  -webkit-backdrop-filter: blur(9px);
+  border-radius: 9999px;
+}
+
+/* links */
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+
+/*pseudo-selector = nele aplicamos as coisas quando se passa o mouse encima*/
+ul li a:hover {
+  background-color: var(--surface-color-hover);
+  border: 1.5px solid var--(--text-color);
+}
+/*social links*/
+#social-links {
+  display: flex;
+  justify-content: center;
+
+  padding: 24px 0;
+  font-size: 32px;
+  transition: background 0.2s;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 16px;
+
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+#social-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+}
+
+/*media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* animation */
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
