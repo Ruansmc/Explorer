@@ -88,7 +88,7 @@ body * {
 }
 #switch button:hover {
   outline: 8px solid var(--highlight-color);
-  background: rgb(251, 255, 0) var(--switch-bg-url) no-repeat center;
+  background: rgb(241, 227, 28) var(--switch-bg-url) no-repeat center;
   transform: translateY(-50%);
 }
 
@@ -104,7 +104,7 @@ body * {
   background: var(--surface-color);
   /*stroke-color-dark-mode*/
   border: 2px solid var(--stroke-color);
-  -webkit-backdrop-filter: blur(9px);
+  /* -webkit-backdrop-filter: blur(9px); */
   border-radius: 9999px;
 }
 
@@ -170,8 +170,11 @@ ul li a:hover {
 
 #social-links a:hover {
   background: rgba(255, 255, 255, 0.2);
+  animation: bounce 2s;
 }
-
+img {
+  margin-right: 5px;
+}
 footer {
   padding: 24px 0;
   text-align: center;
@@ -205,5 +208,23 @@ footer {
   }
   to {
     left: 0;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
